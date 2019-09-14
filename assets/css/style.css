@@ -1,0 +1,36 @@
+/* body {
+    background-image: url(../images/background.jpg);
+    background-size: contain;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-color: #e5a1b8;
+    margin: auto;
+} */
+
+.container-fluid {
+    background-image: url(../images/background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5a1b8;
+    color: #df598e;
+    font-weight: bolder;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    height: 700px;
+}
+
+.edition, h2 {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.questionImage {
+    width: 200px;
+}
+
+.trivia-title, .trivia-image {
+    
+}
