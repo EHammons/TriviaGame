@@ -23,7 +23,7 @@ Created for a homework assignment for the Coding Bootcamp at UT Austin.
 * GitHub
 
 ## Setup
-Simply open the provided link in your browser.
+Simply open the provided link in your browser.<br>
 Link: https://ehammons.github.io/TriviaGame/
 
 ## Code Examples
@@ -44,5 +44,5 @@ Project is: _in progress_ because it will go into my portfolio.
 Project inspired by a homework assignment and based on my childhood love of princesses. My favorite princess is Aurora.
 
 ## Contact
-Created by Elise Hammons - feel free to contact me!
+Created by Elise Hammons - feel free to contact me!<br>
 LinkedIn: https://www.linkedin.com/in/elise-h-01243258/
