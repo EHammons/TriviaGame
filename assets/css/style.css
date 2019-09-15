@@ -1,13 +1,8 @@
-/* body {
-    background-image: url(../images/background.jpg);
-    background-size: contain;
-    background-size: 800px;
-    background-repeat: no-repeat;
+body {
     background-color: #e5a1b8;
-    margin: auto;
-} */
+}
 
-.container-fluid {
+.container {
     background-image: url(../images/background.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -17,9 +12,12 @@
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin: auto;
     height: 700px;
-    position: relative;
+    margin: auto;
+}
+
+.row {
+    border: black 1px solid;
 }
 
 .edition, h2 {
@@ -28,6 +26,9 @@
 }
 
 .questionImage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 300px;
     max-height: 300px;
 }
@@ -41,6 +42,4 @@
     top: 50px;
 }
 
-.row {
-    border: black 1px solid;
-}
+
