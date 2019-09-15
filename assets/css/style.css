@@ -15,11 +15,11 @@
     background-color: #e5a1b8;
     color: #df598e;
     font-weight: bolder;
-    float: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin: auto;
     height: 700px;
+    position: relative;
 }
 
 .edition, h2 {
@@ -28,9 +28,19 @@
 }
 
 .questionImage {
-    width: 200px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-.trivia-title, .trivia-image {
-    
+.trivia-title {
+    top: 50px;
+    left: 20px;
+}
+
+.trivia-image {
+    top: 50px;
+}
+
+.row {
+    border: black 1px solid;
 }
