@@ -34,11 +34,12 @@ body {
 }
 
 .trivia-title {
+    right: 7px;
     top: 50px;
-    left: 20px;
 }
 
 .trivia-image {
+    margin: auto;
     top: 50px;
 }
 
