@@ -125,3 +125,14 @@ function stop() {
 
 renderQuestion();
 updateScore();
+
+// Create function so that when a button is pressed, score updates and next question shows.
+// If (button clicked === correct answer) {
+    // score++;
+// }
+// timeLeft = 30;
+// questionIndex++;
+// renderQuestion;
+
+// Issues - different buttons are correct. Individual questions need coding until I figure out how to make the answers into a related array.
+// Need to make answers into array to check against.
