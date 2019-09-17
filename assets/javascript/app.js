@@ -54,7 +54,7 @@ var questions = {
 
 var score = 0;
 var questionIndex = 0;
-var timeLeft = 10;
+var timeLeft = 30;
 var timeLeftID;
 
 function renderButtons() {
@@ -118,11 +118,10 @@ function decrement() {
 
 function stop() {
     clearInterval(timeLeftID);
-    timeLeft = 10;
+    timeLeft = 30;
     questionIndex++;
     renderQuestion();
 }
 
 renderQuestion();
 updateScore();
-
