@@ -55,3 +55,35 @@ var questions = {
 var score = 0;
 var questionIndex = 0;
 
+function renderButtons() {
+    $("#buttons").empty();
+    var a = $("<button>");
+    a.text(questions.qAndA[questionIndex].ans1);
+    $("#buttons").append(a);
+    var b = $("<button>");
+    b.text(questions.qAndA[questionIndex].ans2);
+    $("#buttons").append(b);
+    var c = $("<button>");
+    c.text(questions.qAndA[questionIndex].ans3);
+    $("#buttons").append(c);
+    var d = $("<button>");
+    d.text(questions.qAndA[questionIndex].ans4);
+    $("#buttons").append(d);
+}
+
+function renderQuestion() {
+    if (questionIndex <+ (questions.qAndA.length - 1)) {
+        console.log(questions.qAndA[questionIndex].q);
+        $("#question").text(questions.qAndA[questionIndex].q);
+    } else {
+        $("#time").text("Game Over!");
+        $("#question").text("Final Score: " + score + " out of " + questions.qAndA.length);
+    }
+}
+
+function updateScore() {
+    $("#score").text("Score: " + score)
+}
+
+renderQuestion();
+renderButtons();
