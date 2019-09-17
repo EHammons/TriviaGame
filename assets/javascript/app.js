@@ -54,26 +54,31 @@ var questions = {
 
 var score = 0;
 var questionIndex = 0;
+var timeLeft = 30;
+var timeLeftID;
 
 function renderButtons() {
     $("#buttons").empty();
     var a = $("<button>");
+    a.addClass("firstAnswer");
     a.text(questions.qAndA[questionIndex].ans1);
     $("#buttons").append(a);
     var b = $("<button>");
+    b.addClass("secondAnswer");
     b.text(questions.qAndA[questionIndex].ans2);
     $("#buttons").append(b);
     var c = $("<button>");
+    c.addClass("thirdAnswer");
     c.text(questions.qAndA[questionIndex].ans3);
     $("#buttons").append(c);
     var d = $("<button>");
+    d.addClass("fourthAnswer");
     d.text(questions.qAndA[questionIndex].ans4);
     $("#buttons").append(d);
 }
 
 function renderQuestion() {
     if (questionIndex <+ (questions.qAndA.length - 1)) {
-        console.log(questions.qAndA[questionIndex].q);
         $("#question").text(questions.qAndA[questionIndex].q);
     } else {
         $("#time").text("Game Over!");
@@ -85,5 +90,28 @@ function updateScore() {
     $("#score").text("Score: " + score)
 }
 
-renderQuestion();
+function timer() {
+    clearInterval(timeLeftID);
+    timeLeftID = setInterval(decrement, 1000);
+}
+
+function decrement() {
+    timeLeft--;
+    $("#time").html("<h3>Time Remaining: " + timeLeft + "</h3>");
+    if (timeLeft === 0) {
+        stop();
+        questionIndex++;
+        renderQuestion();
+        renderButtons();
+    }
+}
+
+function stop() {
+    clearInterval(timeLeftID);
+}
+
 renderButtons();
+renderQuestion();
+updateScore();
+timer();
+
