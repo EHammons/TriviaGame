@@ -1,4 +1,5 @@
 # TriviaGame
+Deployed at https://ehammons.github.io/TriviaGame/
 > A fun, timed trivia game featuring Disney princesses with six questions.
 
 ## Table of contents
@@ -41,7 +42,7 @@ To-do list:
 Project is: _in progress_ because it will go into my portfolio.
 
 ## Inspiration
-Project inspired by a homework assignment and based on my childhood love of princesses. My favorite princess is Aurora.
+Project inspired by a homework assignment and based on my childhood love of princesses. My favorite princess is Aurora (possible hint).
 
 ## Contact
 Created by Elise Hammons - feel free to contact me!<br>
